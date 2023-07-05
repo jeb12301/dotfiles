@@ -1,0 +1,97 @@
+require('user.plugins')
+
+require('user.nvim-tree')
+
+require('user.lualine')
+-- Use pyenv python
+
+vim.cmd.let("g:python3_host_prog=$HOME.'/.pyenv/shims/python3'")
+
+-- Setting up nvim 
+vim.cmd.set("number")                     -- Show current line number
+vim.cmd.set("relativenumber")             -- Show relative line numbers
+
+-- Line number colors
+vim.cmd("highlight LineNr ctermfg=grey ctermbg=white")	
+
+-- Centers when using k, j, and G
+vim.cmd("nnoremap k kzz")
+vim.cmd("nnoremap j jzz")
+vim.cmd("nnoremap G Gzz")
+
+-- copy to clipboard
+vim.cmd("set mouse+=a")
+vim.cmd("set clipboard+=unnamedplus")
+
+-- vimtex
+-- This is necessary for VimTeX to load properly. The "indent" is optional.
+-- Note that most plugin managers will do this automatically.
+vim.cmd("filetype plugin indent on")
+
+vim.cmd("set tabstop=4")
+vim.cmd("set shiftwidth=4")
+
+-- This enables Vim's and neovim's syntax-related features. Without this, some
+-- VimTeX features will not work (see ":help vimtex-requirements" for more info).
+
+vim.cmd("syntax enable")
+
+-- Viewer options: One may configure the viewer either by specifying a built-in
+-- viewer method:
+vim.cmd("let g:vimtex_view_method = 'zathura'")
+
+-- VimTeX uses latexmk as the default compiler backend. If you use it, which is
+-- strongly recommended, you probably don't need to configure anything. If you
+-- want another compiler backend, you can change it as follows. The list of
+-- supported backends and further explanation is provided in the documentation,
+-- see ":help vimtex-compiler".
+vim.cmd("let g:vimtex_compiler_method = 'latexmk'")
+
+
+-- auto-delete compile files, does not work well with multi file latex
+vim.cmd([[
+augroup vimtex_config
+  autocmd!
+  autocmd User VimtexQuit call vimtex#latexmk#clean(0)
+augroup END
+]])
+
+vim.cmd("let g:deoplete#enable_at_startup = 1")
+
+vim.cmd("nmap <localleader>c <Plug>(vimtex-compile)")
+vim.cmd("nmap <localleader>r <Plug>(vimtex-clean)")
+vim.cmd("nmap <localleader>v <plug>(vimtex-view)")
+
+-- press <Tab> to expand or jump in a snippet. These can also be mapped separately
+-- via <Plug>luasnip-expand-snippet and <Plug>luasnip-jump-next.
+vim.cmd("imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'")
+
+-- -1 for jumping backwards.
+
+vim.cmd("inoremap <silent> <S-Tab> <cmd>lua require'luasnip'.jump(-1)<Cr>")
+
+vim.cmd("snoremap <silent> <Tab> <cmd>lua require('luasnip').jump(1)<Cr>")
+vim.cmd("snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>")
+
+
+
+require('user.config')
+
+
+
+-- luasnip config for tab and shift-tab
+-- Expand or jump in insert mode
+vim.cmd("imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'") 
+
+-- Jump forward through tabstops in visual mode
+vim.cmd("map <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'")
+
+-- Jump backward through snippet tabstops with Shift-Tab (for example)
+vim.cmd("imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'")
+vim.cmd("smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'")
+
+
+require('user.keymaps')
+
+
+vim.cmd("set background=light")
