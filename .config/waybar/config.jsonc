@@ -14,7 +14,7 @@
     "modules-center": ["hyprland/window"],
     "modules-right": [
         "tray",
-        "custom/updates",
+        "network",//
         "custom/language",
         "battery",
         "backlight",
@@ -24,7 +24,20 @@
 
     "hyprland/window": {
         "format": "{}"
-    },
+    },	
+	"network": {
+    	"interface": "wlp2s0",
+    	"format": "{ifname}",
+    	"format-wifi": "",
+    	"format-ethernet": "{ipaddr}/{cidr} ",
+    	"format-disconnected": "", //An empty format will hide the module.
+    	"tooltip-format": "{ifname} via {gwaddr} ",
+    	"tooltip-format-wifi": "", //"{essid} ({signalStrength}%) ",
+    	"tooltip-format-ethernet": "󰖪",
+    	"tooltip-format-disconnected": "󰖪 ",
+		"on-click": "kcmshell5 kcm_networkmanagement",
+    	"max-length": 50
+	},
     "wlr/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -48,7 +61,7 @@
         //"interval": 7200,                     // every two hours
         //"exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'",       // # of updates and tooltip details
         //"exec-if": "exit 0",                  // always run; consider advanced run conditions
-        "on-click": "pkill jupyter | jupyter lab & sleep 1 && firefox --new-window 'http://localhost:8888/lab'", 
+        "on-click": "jp", 
 		"signal": 8
     },
    "custom/weather" : {

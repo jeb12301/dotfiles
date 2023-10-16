@@ -94,12 +94,6 @@ _G.packer_plugins = {
     path = "/home/song12301/.local/share/nvim/site/pack/packer/start/deoplete.nvim",
     url = "https://github.com/Shougo/deoplete.nvim"
   },
-  gruvbox = {
-    config = { "\27LJ\2\n;\0\0\3\0\4\0\0066\0\0\0009\0\1\0009\0\2\0'\2\3\0B\0\2\1K\0\1\0\fgruvbox\16colorscheme\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/song12301/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/song12301/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -130,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/song12301/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "/home/song12301/.local/share/nvim/site/pack/packer/start/vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
+  },
   vimtex = {
     loaded = true,
     path = "/home/song12301/.local/share/nvim/site/pack/packer/start/vimtex",
@@ -138,10 +137,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: gruvbox
-time([[Config for gruvbox]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\4\0\0066\0\0\0009\0\1\0009\0\2\0'\2\3\0B\0\2\1K\0\1\0\fgruvbox\16colorscheme\bcmd\bvim\0", "config", "gruvbox")
-time([[Config for gruvbox]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

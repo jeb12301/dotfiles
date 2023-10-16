@@ -1,3 +1,5 @@
+-- Search with lower case!
+
 -- Abbreviations used in this article and the LuaSnip docs
 local ls = require("luasnip")
 local s = ls.snippet
@@ -51,6 +53,20 @@ s({trig="dm", snippetType="autosnippet", dscr="A LaTeX equation environment"},
 		{ i(1) }
 	)
 ),
+-- aligned eq
+s({trig="dm", snippetType="autosnippet", dscr="A LaTeX equation environment"},
+	fmta(
+		[[
+			\begin{equation}
+				\begin{aligned}
+					<>
+				\begin{aligned}
+			\end{equation}
+		]],
+		-- The insert node is placed in the <> angle brackets
+		{ i(1) }
+	)
+),
 -- frac
 s({trig="//", snippetType="autosnippet", wordTrig=false, dscr="Expands '//' into '\frac{}{}'"},
 	fmta(
@@ -72,18 +88,6 @@ s({trig = '([%d])/', snippetType="autosnippet", regTrig = true, wordTrig = false
     }
   )
 ),
-s({trig="ff", wordTrig=false, snippetType="autosnippet", dscr="Expands '//' into '\frac{}{}'"},
-    fmta(
-        "\\frac{<>}{<>}",
-        -- The insert node is placed in the <> angle brackets
-        { 
-            i(1),
-            i(2),
-        }
-    ),
-    {condition = in_mathzone}
-),
-
 s({trig="\\fra", dscr="fraction", snippetType="autosnippet"},
 	fmta(
 		"\\frac{<>}{<>}",
@@ -137,7 +141,8 @@ s({trig="s", snippetType="snippet" },
     fmta(
         "\\section{<>}",
         { i(1) }
-    )
+    ),
+	{condition = not in_mathzone}
 ),
 s({trig="ss", snippetType="snippet" },
     fmta(
@@ -266,9 +271,16 @@ s({trig="vec", wordTrig=false, snippetType="autosnippet"},
 	),
 	{condition = in_mathzone}
 ),
-s({trig="underline", wordTrig=false, snippetType="autosnippet"},
+s({trig="uline", wordTrig=false, snippetType="autosnippet"},
 	fmta(
 		"\\underline{<>}",
+		{ i(1) }
+	),
+	{condition = in_mathzone}
+),
+s({trig="overl", wordTrig=false, snippetType="autosnippet"},
+	fmta(
+		"\\overline{<>}",
 		{ i(1) }
 	),
 	{condition = in_mathzone}
@@ -329,9 +341,21 @@ s({trig="ooo", wordTrig=false, snippetType="autosnippet"},
 	},
 	{condition = in_mathzone}
 ),
-s({trig="prod", wordTrig=false, snippetType="autosnippet"},
+s({trig="prod", wordTrig=false, snippetType="autosnippet", priority=10},
 	{
 	t("\\prod "),
+	},
+	{condition = in_mathzone}
+),
+s({trig="cprod", wordTrig=false, snippetType="autosnippet", priority=100},
+	{
+	t("\\coprod "),
+	},
+	{condition = in_mathzone}
+),
+s({trig="bcup", wordTrig=false, snippetType="autosnippet", priority=100},
+	{
+	t("\\bigcup "),
 	},
 	{condition = in_mathzone}
 ),
@@ -341,7 +365,7 @@ s({trig="pm", wordTrig=false, snippetType="autosnippet"},
 	},
 	{condition = in_mathzone}
 ),
-s({trig="mp", wordTrig=false, snippetType="autosnippet"},
+s({trig="mp", wordTrig=false, snippetType="autosnippet", priority=10},
 	{
 	t("\\mp "),
 	},
@@ -353,7 +377,7 @@ s({trig="...", wordTrig=false, snippetType="autosnippet"},
 	},
 	{condition = in_mathzone}
 ),
-s({trig="->", wordTrig=false, snippetType="autosnippet"},
+s({trig="->", wordTrig=false, snippetType="autosnippet", priority=10},
 	{
 	t("\\to "),
 	},
@@ -365,6 +389,13 @@ s({trig="!>", wordTrig=false, snippetType="autosnippet"},
 	},
 	{condition = in_mathzone}
 ),
+s({trig="!>", wordTrig=false, snippetType="autosnippet", priority=100},
+	{
+	t("\\longmapsto "),
+	},
+	{condition = in_mathzone}
+),
+
 s({trig="invs", wordTrig=false, snippetType="autosnippet"},
 	{
 	t("^{-1} "),
@@ -383,7 +414,7 @@ s({trig="and", wordTrig=false, snippetType="autosnippet"},
 	},
 	{condition = in_mathzone}
 ),
-s({trig="orr", wordTrig=false, snippetType="autosnippet"},
+s({trig="orr", wordTrig=false, snippetType="autosnippet", priority=10},
 	{
 	t("\\cup "),
 	},
@@ -431,9 +462,15 @@ s({trig="=<", wordTrig=false, snippetType="autosnippet"},
 	},
 	{condition = in_mathzone}
 ),
-s({trig="iff", worTrig=false, snippetType="autosnippet"},
+s({trig="iff", worTrig=false, snippetType="autosnippet", priority=10},
 	{
 	t("\\iff "),
+	},
+	{condition = in_mathzone}
+),
+s({trig="liff", worTrig=false, snippetType="autosnippet", priority=100},
+	{
+	t("\\longleftrightarrow "),
 	},
 	{condition = in_mathzone}
 ),
@@ -446,6 +483,12 @@ s({trig="e\\xi sts", wordTrig=false, snippetType="autosnippet"},
 s({trig="equiv", wordTrig=false, snippetType="autosnippet"},
 	{
 	t("\\equiv "),
+	},
+	{condition = in_mathzone}
+),
+s({trig="cong", wordTrig=false, snippetType="autosnippet"},
+	{
+	t("\\cong"),
 	},
 	{condition = in_mathzone}
 ),
@@ -615,6 +658,12 @@ s({trig="EE", wordTrig=false, snippetType="autosnippet"},
 	{condition = in_mathzone}
 ),
 
+s({trig="emp", wordTrig=false, snippetType="autosnippet", priority = 100},
+	{
+	t("\\emptyset "),
+	},
+	{condition = in_mathzone}
+),
 -- Derivatives and integrals
 s({trig="par", wordTrig=false, dscr="partial derivative", snippetType="snippet"},
 	fmta(
@@ -698,6 +747,18 @@ s({trig="oint", wordTrig=false, snippetType="autosnippet"},
 	},
 	{condition = in_mathzone}
 ),
+s({trig="oi2", wordTrig=false, snippetType="autosnippet"},
+	{
+	t("\\oiint "),
+	},
+	{condition = in_mathzone}
+),
+s({trig="oi3", wordTrig=false, snippetType="autosnippet"},
+	{
+	t("\\oiiint "),
+	},
+	{condition = in_mathzone}
+),
 s({trig="iiint", wordTrig=false, snippetType="autosnippet"},
 	{
 	t("\\iiint "),
@@ -720,7 +781,24 @@ s({trig="int", wordTrig=false, snippetType="snippet", priority=100},
 	),
 	{condition = in_mathzone}
 ),
---Physics
+s({trig="bg|", wordTrig=false, snippetType="autosnippet"},
+	{
+	t("\\bigg|"),
+	},
+	{condition = in_mathzone}
+),
+
+--topology
+s({trig="ring", wordTrig=false, snippetType="autosnippet"},
+	fmta(
+		"\\mathring{<>}",
+		{ i(1) }
+	),
+	{condition = in_mathzone}
+),
+
+
+--physics
 s({trig="kbt", wordTrig=false, snippetType="autosnippet"},
 	{
 	t("k_{B}T "),
@@ -810,6 +888,31 @@ s({trig="norm", priority=100, wordTrig=false, snippetType="autosnippet"},
 		"\\lvert <> \\rvert ",
 		{ i(1) }
 	),
+	{condition = in_mathzone}
+),
+---- vector calculus
+s({trig="curl", wordTrig=false, snippetType="autosnippet"},
+	{
+	t("\\vec{\\nabla} \\times "),
+	},
+	{condition = in_mathzone}
+),
+s({trig="div", wordTrig=false, snippetType="autosnippet"},
+	{
+	t("\\vec{\\nabla} \\cdot"),
+	},
+	{condition = in_mathzone}
+),
+s({trig="grad", wordTrig=false, snippetType="autosnippet"},
+	{
+	t("\\vec{\\nabla}"),
+	},
+	{condition = in_mathzone}
+),
+s({trig="lapl", wordTrig=false, snippetType="autosnippet"},
+	{
+	t("\\vec{\\nabla}^2"),
+	},
 	{condition = in_mathzone}
 ),
 -- environments
@@ -1102,7 +1205,19 @@ s({trig="\\O", wordTrig=false, snippetType="autosnippet"},
         t("\\Omega "),
         },
         {condition = in_mathzone}
-), 
+),
+s({trig="tau", wordTrig=false, snippetType="autosnippet"},
+        {
+        t("\\tau "),
+        },
+		{condition = in_mathzone}
+),
+s({trig="mu", wordTrig=false, snippetType="autosnippet"},
+        {
+        t("\\mu "),
+        },
+        {condition = in_mathzone}
+),
 s({trig="phi", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\phi "),

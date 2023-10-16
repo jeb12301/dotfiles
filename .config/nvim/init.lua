@@ -19,32 +19,23 @@ vim.cmd("nnoremap k kzz")
 vim.cmd("nnoremap j jzz")
 vim.cmd("nnoremap G Gzz")
 
+-- Centers for ctrl + b and ctrl + f
+-- vim.cmd("nnoremap <C-f> <C-f>zz")
+-- vim.cmd("nnoremap <C-b> <C-b>zz")
+
 -- copy to clipboard
 vim.cmd("set mouse+=a")
 vim.cmd("set clipboard+=unnamedplus")
 
--- vimtex
--- This is necessary for VimTeX to load properly. The "indent" is optional.
--- Note that most plugin managers will do this automatically.
 vim.cmd("filetype plugin indent on")
 
 vim.cmd("set tabstop=4")
 vim.cmd("set shiftwidth=4")
 
--- This enables Vim's and neovim's syntax-related features. Without this, some
--- VimTeX features will not work (see ":help vimtex-requirements" for more info).
-
 vim.cmd("syntax enable")
 
--- Viewer options: One may configure the viewer either by specifying a built-in
--- viewer method:
-vim.cmd("let g:vimtex_view_method = 'zathura'")
+vim.cmd("let g:vimtex_view_method = 'zathura_simple'")
 
--- VimTeX uses latexmk as the default compiler backend. If you use it, which is
--- strongly recommended, you probably don't need to configure anything. If you
--- want another compiler backend, you can change it as follows. The list of
--- supported backends and further explanation is provided in the documentation,
--- see ":help vimtex-compiler".
 vim.cmd("let g:vimtex_compiler_method = 'latexmk'")
 
 
@@ -72,7 +63,6 @@ vim.cmd("inoremap <silent> <S-Tab> <cmd>lua require'luasnip'.jump(-1)<Cr>")
 
 vim.cmd("snoremap <silent> <Tab> <cmd>lua require('luasnip').jump(1)<Cr>")
 vim.cmd("snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>")
-
 
 
 require('user.config')

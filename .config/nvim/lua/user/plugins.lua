@@ -33,23 +33,26 @@ require('packer').startup(function(use)
 
   -- nvim-tree
   use ({'nvim-tree/nvim-tree.lua', requires = {
-    'nvim-tree/nvim-web-devicons'}})
+  'nvim-tree/nvim-web-devicons'}})
 
   -- gruvbox
-  use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
+  -- use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
 
   -- lualine
   use {
   'nvim-lualine/lualine.nvim',
-  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+ requires = { 'nvim-tree/nvim-web-devicons', opt = true },
 }
 
   -- telescope
   use {
   'nvim-telescope/telescope.nvim', tag = '0.1.1',
--- or                            , branch = '0.1.x',
+  -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
+
+  -- vim-be-good
+  use 'ThePrimeagen/vim-be-good'
 
   if install_plugins then
     require('packer').sync()

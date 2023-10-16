@@ -50,6 +50,7 @@ tooltip {
 
 #custom-language,
 #custom-updates,
+#network,
 #custom-caffeine,
 #custom-weather,
 #window,
@@ -93,7 +94,7 @@ tooltip {
     border-right: 0px;
 }
 
-#custom-updates {
+#network { 
     color: #f5c2e7;
     border-radius: 10px 0px 0px 10px;
     border-left: 0px;
