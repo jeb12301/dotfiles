@@ -1,0 +1,11 @@
+{
+  "accentColor": "",
+  "theme": "moonstone",
+  "baseFontSize": 24,
+  "enabledCssSnippets": [
+    "idea",
+    "tab_height",
+    "ribbon"
+  ],
+  "cssTheme": "Typomagical"
+}

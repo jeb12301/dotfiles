@@ -1,0 +1,35 @@
+/* Modifies height of top bar from: https://forum.obsidian.md/t/reduce-padding-height-of-tab-bar/53392/13 */
+
+.workspace-ribbon.mod-left.is-collapsed {
+margin-top: 27px;
+margin-left: -6px;
+}
+
+.workspace-ribbon.mod-left {
+margin-top: 27px;
+width:1px;
+}
+
+.workspace-split.mod-left-split {margin-left: 0px;}
+
+.workspace-ribbon.side-dock-ribbon.mod-left::before {
+height: 27px;
+}
+
+.sidebar-toggle-button:is(.mod-right, .mod-left){
+height: 27px;
+}
+
+.mod-top .workspace-tab-header-container {
+height: 27px;
+}
+
+.workspace .mod-root .workspace-tab-header {
+padding-bottom: 0px;
+padding-top: 5px;
+}
+
+.mod-top .workspace-tab-header-container-inner {
+margin-top: 5px;
+padding-bottom: 0px;
+}

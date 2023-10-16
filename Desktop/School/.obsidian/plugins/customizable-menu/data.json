@@ -1,0 +1,24 @@
+{
+  "menuCommands": [
+    {
+      "name": "Excalidraw: Create a new drawing - IN THE CURRENT ACTIVE PANE - and embed into active document",
+      "id": "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current",
+      "icon": "brush"
+    },
+    {
+      "id": "editor:fold-all",
+      "name": "Fold all headings and lists",
+      "icon": "lucide-minimize-2",
+      "allowPreview": true
+    }
+  ],
+  "hideTitles": [
+    "Merge entire file with",
+    "Open to the right",
+    "Select all",
+    "Cut",
+    "Copy",
+    "Paste",
+    "Paste as plain text"
+  ]
+}
