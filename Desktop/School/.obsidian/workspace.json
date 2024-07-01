@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f827c5314e8cfed1",
+        "id": "b5ea671e112a6d83",
         "type": "tabs",
         "children": [
           {
-            "id": "780ab1387265b382",
+            "id": "f93b3a4c1eda1e26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PHYS 324/PHYS 324 Lecture/PHYS 324 Lecture 4.md",
+                "file": "To Read.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "54f52905b5740974",
+            "id": "1b34b81b35d0c4c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PHYS 324/PHYS 324 Lecture/PHYS 324 Lecture 5.md",
+                "file": "EEG/EEG Summary.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,36 +34,46 @@
             }
           },
           {
-            "id": "01d8792f40fcd1b3",
+            "id": "839dc5bec2a7e0de",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PHYS 324/PHYS 324 Homework/PHYS 324 Tutorial/PHYS 324 Tutorial Homework Document.pdf"
+                "file": "School/PHYS 323/PHYS 323 Lecture/PHYS 323 Lecture 4.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           },
           {
-            "id": "c0fd2fb6d999daec",
+            "id": "bb394b6f81ac6ed5",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PHYS 324/PHYS 324 Homework/324_HW3.pdf"
+                "file": "EEG/EEG Summary.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           },
           {
-            "id": "181e7635a8b63892",
+            "id": "fa37d7fc59c00e71",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PHYS 324/PHYS 324 Homework/324_HW3.pdf"
+                "file": "LLM.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -92,28 +102,20 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ampere",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTimeReverse"
               }
-            }
-          },
-          {
-            "id": "6399e27cec04cbb3",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 293.5004348754883,
     "collapsed": true
   },
   "right": {
@@ -130,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PHYS 324/PHYS 324 Lecture/PHYS 324 Lecture 4.md",
+                "file": "LLM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +144,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           },
@@ -152,11 +156,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PHYS 324/PHYS 324 Lecture/PHYS 324 Lecture 4.md"
+                "file": "LLM.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -165,36 +170,61 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": true,
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "templates:Insert template": true,
-      "command-palette:Open command palette": true
+      "command-palette:Open command palette": true,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "780ab1387265b382",
+  "active": "fa37d7fc59c00e71",
   "lastOpenFiles": [
-    "PHYS 324/PHYS 324 Lecture/PHYS 324 Lecture 5.md",
-    "PHYS 324/PHYS 324 Lecture/PHYS 324 Lecture 4.md",
-    "PHYS 324/PHYS 324 Lecture/PHYS 324 Lecture 3.md",
-    "PHYS 324/PHYS 324 Homework/HW 3.md",
-    "PHYS 324/PHYS 324 Homework/PHYS 324 Tutorial/PHYS 324 Tutorial Homework Document.pdf",
-    "PHYS 324/PHYS 324 Homework/324_HW3.pdf",
-    "PHYS 334/PHYS 334 Homework/hw2_S21.pdf",
-    "PHYS 324/PHYS 324 Exercises.md",
-    "PHYS 334/PHYS 334 Homework/HW 2.md",
-    "PHYS 334/PHYS 334 Homework/JEB_HW2.synctex(busy)",
-    "PHYS 334/PHYS 334 Homework/pdflatex170950.fls",
-    "PHYS 334/PHYS 334 Homework/pdflatex170660.fls",
-    "PHYS 334/PHYS 334 Homework/pdflatex169593.fls",
-    "PHYS 334/PHYS 334 Homework/pdflatex169586.fls",
-    "PHYS 334/PHYS 334 Homework/pdflatex169347.fls",
-    "PHYS 334/PHYS 334 Homework/pdflatex168530.fls",
-    "PHYS 334/PHYS 334 Lecture/PHYS 334 Lecture 6.md",
-    "PHYS 324/PHYS 324 Homework/HW 2.md",
-    "PHYS 324/PHYS 324 Homework/archive/HW 2.md",
-    "PHYS 324/PHYS 324 Lecture/PHYS 324 Lecture 2.md",
-    "MATH 424/MATH 424 Lecture/MATH 424 Lecture 8.md",
-    "MATH 424/MATH 424 Lecture/MATH 424 Lecture 2.md"
+    "EEG/EEG Summary.md",
+    "EEG/Magnetoencephalography.md",
+    "EEG/Boundary-Element-Method-EA6RCH9G.md",
+    "To Read.md",
+    "Books_Lectures.md",
+    "Circular Motion in Uniform Magnetic Field.md",
+    "LLM.md",
+    "EEG/WAMY.md",
+    "Videos/Cauchy's Proof of the Basel Problem.md",
+    "School/PHYS 323/PHYS 323 Lecture/PHYS 323 Lecture 4.md",
+    "School/PHYS 322/electro.pdf",
+    "School/PHYS 322/PHYS 322 HW/PHYS 322 HW6.md",
+    "School/PHYS 322/PHYS 322 HW/PHYS 322 HW 5.md",
+    "School/PHYS 322/PHYS 322 Notes/PHYS 322 Lecture 2.md",
+    "School/PHYS 322/PHYS 322 Notes/PHYS 322 Lecture 12.md",
+    "School/PHYS 322/PHYS 322 Notes/PHYS 322 Lecture 8.md",
+    "School/PHYS 322/PHYS 322 Notes/attachments/PHYS 322 Lecture 8 2024-08-18 20.04.11.excalidraw.md",
+    "School/PHYS 322/PHYS 322 Notes/PHYS 322 Lecture 3.md",
+    "School/PHYS 322/attachments/(!Ex) Electric Potential of Non-Uniformly Charged Infinite Plane 2024-08-18 03.05.56.excalidraw.md",
+    "School/PHYS 323/PHYS 323 Homework/PHYS 323 Homework 1.md",
+    "School/PHYS 322/PHYS 322 Notes/PHYS 322 Lecture 6.md",
+    "School/PHYS 322/PHYS 322 Notes/attachments/PHYS 322 Lecture 5 2023-07-18 12.39.31.excalidraw.md",
+    "School/PHYS 322/PHYS 322 Notes/PHYS 322 Lecture 4.md",
+    "School/PHYS 322/PHYS 322 Notes/attachments/PHYS 322 Lecture 5 2023-07-06 10.02.35.excalidraw.md",
+    "School/PHYS 322/PHYS 322 Notes/attachments/PHYS 322 Lecture 3 2023-07-05 22.22.09.excalidraw.md",
+    "School/PHYS 322/PHYS 322 Notes/attachments/PHYS 322 Lecture 3 2023-07-04 17.54.07.excalidraw.md",
+    "School/PHYS 322/(!Ex) Electric Potential of Non-Uniformly Charged Infinite Plane.md",
+    "Papers/zotero/T947GGHM/Reis and Lochmann - 2015 - Using a motion capture system for spatial localiza.pdf",
+    "Papers/zotero/T947GGHM",
+    "Papers/zotero/tmp-gddJXI/Reis and Lochmann - 2015 - Using a motion capture system for spatial localiza.pdf",
+    "Papers/zotero/tmp-gddJXI",
+    "Papers/zotero/TFGV3LH7/7436820.html",
+    "Papers/zotero/TFGV3LH7",
+    "Papers/zotero/IRIR7AWJ/6928435.html",
+    "Papers/zotero/IRIR7AWJ",
+    "Papers/zotero/SMJT47WQ/Zarghami et al. - 2015 - Transfer-Function-Based Calibration of Sparse EEG .pdf",
+    "Papers/storage/SUARB4GX/image.png",
+    "Papers/storage/REWC4HQ9/image.png",
+    "Papers/storage/Q83ZYC86/image.png",
+    "Papers/storage/Q3GH5PLU/image.png",
+    "Papers/storage/LJJYJF5M/image.png",
+    "Papers/storage/JUUPCX5I/image.png",
+    "Papers/storage/GCKYR8B8/image.png",
+    "Papers/storage/EZFWZ7S5/image.png",
+    "Papers/storage/DA87N3PW/image.png",
+    "Papers/storage/4BZ6BGKA/image.png"
   ]
 }

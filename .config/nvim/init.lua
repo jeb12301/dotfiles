@@ -1,6 +1,6 @@
 require('user.plugins')
 
-require('user.nvim-tree')
+-- require('user.nvim-tree')
 
 require('user.lualine')
 -- Use pyenv python
@@ -52,6 +52,9 @@ vim.cmd("let g:deoplete#enable_at_startup = 1")
 vim.cmd("nmap <localleader>c <Plug>(vimtex-compile)")
 vim.cmd("nmap <localleader>r <Plug>(vimtex-clean)")
 vim.cmd("nmap <localleader>v <plug>(vimtex-view)")
+vim.cmd("nmap <localleader>e <plug>(vimtex-errors)")
+
+
 
 -- press <Tab> to expand or jump in a snippet. These can also be mapped separately
 -- via <Plug>luasnip-expand-snippet and <Plug>luasnip-jump-next.
@@ -68,7 +71,6 @@ vim.cmd("snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>")
 require('user.config')
 
 
-
 -- luasnip config for tab and shift-tab
 -- Expand or jump in insert mode
 vim.cmd("imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'") 
@@ -80,8 +82,8 @@ vim.cmd("map <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next
 vim.cmd("imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'")
 vim.cmd("smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'")
 
-
 require('user.keymaps')
 
-
 vim.cmd("set background=light")
+
+vim.cmd("colorscheme PaperColor")

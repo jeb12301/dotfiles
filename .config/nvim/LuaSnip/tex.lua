@@ -150,7 +150,22 @@ s({trig="ss", snippetType="snippet" },
         { i(1) }
     )
 ),
-
+s({trig="fig", snippetType="snippet", dscr="Figure"},
+	fmta(
+		[[
+			\begin{figure}[htp]
+			\centering
+			\centerline{\includegraphics[width=6.6cm]{./attachments/<>.png}}
+			\caption{<>} 
+			\end{figure}
+		]],
+		-- The insert node is placed in the <> angle brackets
+		{ 
+			i(1),
+			i(2),
+		}
+	)
+),
 -- operations
 s({trig="bf", snippetType="autosnippet", dscr="bold"},
 	fmta(
@@ -653,7 +668,7 @@ s({trig="BB", wordTrig=false, snippetType="autosnippet"},
 ),
 s({trig="EE", wordTrig=false, snippetType="autosnippet"},
 	{
-	t("\\mathbb{E}"),
+	t("\\exists "),
 	},
 	{condition = in_mathzone}
 ),
@@ -960,49 +975,49 @@ s({trig="lr{", wordTrig=false, snippetType="autosnippet", riority=100},
 ),
 -- Greek letters
 -- Examples of Greek letter snippets, autotriggered for efficiency
-s({trig=";a", wordTrig=false, snippetType="autosnippet"},
+s({trig="'a", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\alpha "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";b", wordTrig=false, snippetType="autosnippet"},
+s({trig="'b", wordTrig=false, snippetType="autosnippet"},
 	{
         t("\\beta "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";c", wordTrig=false, snippetType="autosnippet"},
+s({trig="'c", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\chi "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";g", wordTrig=false, snippetType="autosnippet"},
+s({trig="'g", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\gamma "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";G", wordTrig=false, snippetType="autosnippet"},
+s({trig="'G", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\Gamma"),
         },
         {condition = in_mathzone}
 ),
-s({trig=";d", wordTrig=false, snippetType="autosnippet"},
+s({trig="'d", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\delta "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";D", wordTrig=false, snippetType="autosnippet"},
+s({trig="'D", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\Delta "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";e", wordTrig=false, snippetType="autosnippet"},
+s({trig="'e", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\epsilon "),
         },
@@ -1014,73 +1029,73 @@ s({trig=":e", wordTrig=false, snippetType="autosnippet"},
         },
         {condition = in_mathzone}
 ),
-s({trig=";z", wordTrig=false, snippetType="autosnippet"},
+s({trig="'z", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\zeta "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";t", wordTrig=false, snippetType="autosnippet"},
+s({trig="'t", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\theta "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";T", wordTrig=false, snippetType="autosnippet"},
+s({trig="'T", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\Theta "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";k", wordTrig=false, snippetType="autosnippet"},
+s({trig="'k", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\kappa "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";l", wordTrig=false, snippetType="autosnippet"},
+s({trig="'l", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\lambda "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";L", wordTrig=false, snippetType="autosnippet"},
+s({trig="'L", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\Lambda "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";m", wordTrig=false, snippetType="autosnippet"},
+s({trig="'m", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\mu "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";r", wordTrig=false, snippetType="autosnippet"},
+s({trig="'r", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\rho "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";s", wordTrig=false, snippetType="autosnippet"},
+s({trig="'s", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\sigma "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";S", wordTrig=false, snippetType="autosnippet"},
+s({trig="'S", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\Sigma "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";o", wordTrig=false, snippetType="autosnippet"},
+s({trig="'o", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\omega "),
         },
         {condition = in_mathzone}
 ),
-s({trig=";O", wordTrig=false, snippetType="autosnippet"},
+s({trig="'O", wordTrig=false, snippetType="autosnippet"},
         {
         t("\\Omega "),
         },

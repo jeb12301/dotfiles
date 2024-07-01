@@ -1,7 +1,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-
 -- netrw
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 

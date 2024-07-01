@@ -15,30 +15,36 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
   install_plugins = true
 end
 
-
 require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
-  -- vimtex
-  use 'lervag/vimtex'
 
   -- deoplete
   use {'Shougo/deoplete.nvim', run = ':UpdateRemotePlugins'}
   use 'deoplete-plugins/deoplete-tag'
   use {'deathlyfrantic/deoplete-spell', branch = 'main'}
 
+  -- vimtex
+  use 'lervag/vimtex'
+
   -- luasnip
   use({'L3MON4D3/LuaSnip', tag = 'v<CurrentMajor>.*'})
 
   -- nvim-tree
-  use ({'nvim-tree/nvim-tree.lua', requires = {
-  'nvim-tree/nvim-web-devicons'}})
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  }
 
+  -- papercolor
+  use 'NLKNguyen/papercolor-theme'
+  
   -- gruvbox
   -- use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
 
-  -- lualine
+  -- lualie
   use {
   'nvim-lualine/lualine.nvim',
  requires = { 'nvim-tree/nvim-web-devicons', opt = true },
@@ -53,6 +59,30 @@ require('packer').startup(function(use)
 
   -- vim-be-good
   use 'ThePrimeagen/vim-be-good'
+
+  -- nerdtree
+  -- use 'preservim/nerdtree'
+
+  -- lean.nvim
+  use 'Julian/lean.nvim'
+  use 'neovim/nvim-lspconfig'
+  use 'nvim-lua/plenary.nvim'
+  
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    }
+
+  -- hyprland syntax
+  use {
+    'theRealCarneiro/hyprland-vim-syntax',
+    requires = {
+      'nvim-treesitter/nvim-treesitter',
+    }, ft = 'hypr',
+  }
 
   if install_plugins then
     require('packer').sync()

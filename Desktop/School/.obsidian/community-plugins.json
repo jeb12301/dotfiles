@@ -10,6 +10,10 @@
   "folder-note-plugin",
   "mathlinks",
   "dataview",
-  "math-booster",
-  "obsidian-query-control"
+  "obsidian-query-control",
+  "obsidian-vimrc-support",
+  "obsidian-relative-line-numbers",
+  "obsidian-copy-block-link",
+  "templater-obsidian",
+  "math-booster"
 ]

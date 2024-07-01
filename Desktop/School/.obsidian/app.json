@@ -1,20 +1,19 @@
 {
-  "vimMode": false,
-  "autoPairMarkdown": false,
+  "vimMode": true,
+  "showLineNumber": true,
+  "autoPairBrackets": false,
   "newFileLocation": "current",
   "attachmentFolderPath": "./attachments",
   "pdfExportSettings": {
-    "includeName": true,
+    "includeName": false,
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 100
+    "downscalePercent": 57
   },
-  "spellcheck": true,
-  "strictLineBreaks": false,
-  "spellcheckLanguages": null,
-  "autoConvertHtml": true,
-  "autoPairBrackets": false,
+  "readableLineLength": false,
+  "autoPairMarkdown": false,
   "livePreview": true,
-  "readableLineLength": false
+  "defaultViewMode": "source",
+  "autoConvertHtml": true
 }

@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/song12301/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/song12301/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/song12301/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/song12301/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/song12301/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/song12301/.cache/nvim/packer_hererocks/2.1.1707061634/share/lua/5.1/?.lua;/home/song12301/.cache/nvim/packer_hererocks/2.1.1707061634/share/lua/5.1/?/init.lua;/home/song12301/.cache/nvim/packer_hererocks/2.1.1707061634/lib/luarocks/rocks-5.1/?.lua;/home/song12301/.cache/nvim/packer_hererocks/2.1.1707061634/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/song12301/.cache/nvim/packer_hererocks/2.1.1707061634/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -94,15 +94,37 @@ _G.packer_plugins = {
     path = "/home/song12301/.local/share/nvim/site/pack/packer/start/deoplete.nvim",
     url = "https://github.com/Shougo/deoplete.nvim"
   },
+  ["hyprland-vim-syntax"] = {
+    loaded = false,
+    needs_bufread = true,
+    only_cond = false,
+    path = "/home/song12301/.local/share/nvim/site/pack/packer/opt/hyprland-vim-syntax",
+    url = "https://github.com/theRealCarneiro/hyprland-vim-syntax"
+  },
+  ["lean.nvim"] = {
+    loaded = true,
+    path = "/home/song12301/.local/share/nvim/site/pack/packer/start/lean.nvim",
+    url = "https://github.com/Julian/lean.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/song12301/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/song12301/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/song12301/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/song12301/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -113,6 +135,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/song12301/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["papercolor-theme"] = {
+    loaded = true,
+    path = "/home/song12301/.local/share/nvim/site/pack/packer/start/papercolor-theme",
+    url = "https://github.com/NLKNguyen/papercolor-theme"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -137,6 +164,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType hypr ++once lua require("packer.load")({'hyprland-vim-syntax'}, { ft = "hypr" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+vim.cmd("augroup END")
+vim.cmd [[augroup filetypedetect]]
+time([[Sourcing ftdetect script at: /home/song12301/.local/share/nvim/site/pack/packer/opt/hyprland-vim-syntax/ftdetect/hypr.vim]], true)
+vim.cmd [[source /home/song12301/.local/share/nvim/site/pack/packer/opt/hyprland-vim-syntax/ftdetect/hypr.vim]]
+time([[Sourcing ftdetect script at: /home/song12301/.local/share/nvim/site/pack/packer/opt/hyprland-vim-syntax/ftdetect/hypr.vim]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
