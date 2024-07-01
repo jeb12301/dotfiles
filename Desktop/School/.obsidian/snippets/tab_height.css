@@ -1,24 +1,74 @@
 /* Modifies height of top bar from: https://forum.obsidian.md/t/reduce-padding-height-of-tab-bar/53392/13 */
 
+
+body {
+--ribbon-width: 35px;
+--header-height: 20px;
+}
+
+.cm-editor {
+margin-left: 0px;
+/*width: 1044px;*/
+}
+
+.markdown-source-view, .markdown-preview-view {
+max-width: 900px;
+margin-left: -18px;
+}
+
 .workspace-ribbon.mod-left.is-collapsed {
 margin-top: 27px;
 margin-left: -6px;
+margin-right: -10px;
+padding-right: 0px;
+padding-bottom: 0px;
+width: 10px !important;
+--ribbon-width: 0px;
+}
+
+.workspace-tab-header-container-inner {
+	margin-left: 30px;
+}
+
+.cm-gutters{
+margin-left: -7px !important;
+padding-inline-end: 10px !important;
 }
 
 .workspace-ribbon.mod-left {
 margin-top: 27px;
-width:1px;
+width:10px !important;
+}
+
+.side-dock-settings {
+width: 15px !important;
 }
 
 .workspace-split.mod-left-split {margin-left: 0px;}
 
 .workspace-ribbon.side-dock-ribbon.mod-left::before {
 height: 27px;
+width: 28px;
 }
 
-.sidebar-toggle-button:is(.mod-right, .mod-left){
+
+
+.sidebar-toggle-button.mod-right {
 height: 27px;
 }
+
+.sidebar-toggle-button.mod-left {
+height: 27px;
+margin-left: -0px;
+margin-right: -0px;
+width: 33px;
+}
+
+.sidebar-toggle-button.mod-left.clickable-icon {
+margin-right: -5px;
+padding-right: 0px;
+}
+
 
 .mod-top .workspace-tab-header-container {
 height: 27px;
@@ -32,4 +82,9 @@ padding-top: 5px;
 .mod-top .workspace-tab-header-container-inner {
 margin-top: 5px;
 padding-bottom: 0px;
+}
+
+
+.cm-content.cm-lineWrapping{
+padding-top: 20px !important;
 }

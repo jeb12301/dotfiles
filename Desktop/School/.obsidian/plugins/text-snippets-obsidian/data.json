@@ -1,15 +1,17 @@
 {
-  "snippets_file": "snippet : It is an obsidian plugin, that replaces your selected text.\nq : >[!question] \ndef : >[!info] Definition\nex : >[!example] Example\nth : >[!theorem] Theorem\nidea : >[!idea] Clarification\n4 : #### \nurl : [ref]($pst$)$nl$$end$\nim : ![|200]($pst$)$nl$$end$\n",
+  "snippets_file": "snippet : It is an obsidian plugin, that replaces your selected text.\nq : >[!question] \nr : >[!info] Remark\ni : >[!idea] Clarification\n4 : #### \n5 : ##### \nurl : [ref]($pst$)$end$\nim : ![|200]($pst$)$nl$$end$\nqed : $\\quad \\square$\n\n\nex : >[!example] Example\nth : >[!theorem] Theorem",
   "snippets": [
     "snippet : It is an obsidian plugin, that replaces your selected text.",
     "q : >[!question] ",
-    "def : >[!info] Definition",
-    "ex : >[!example] Example",
-    "th : >[!theorem] Theorem",
-    "idea : >[!idea] Clarification",
+    "r : >[!info] Remark",
+    "i : >[!idea] Clarification",
     "4 : #### ",
-    "url : [ref]($pst$)$nl$$end$",
-    "im : ![|200]($pst$)$nl$$end$"
+    "5 : ##### ",
+    "url : [ref]($pst$)$end$",
+    "im : ![|200]($pst$)$nl$$end$",
+    "qed : $\\quad \\square$",
+    "ex : >[!example] Example",
+    "th : >[!theorem] Theorem"
   ],
   "endSymbol": "$end$",
   "newlineSymbol": "$nl$",

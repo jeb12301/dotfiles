@@ -3,6 +3,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 
+alias sshc="ssh jeb12301@cancun.cs.washington.edu"
+
 # Download Znap, if it's not there yet.
 [[ -r $ZDOTDIR/zsh_plugins/znap/znap.zsh ]] ||
     git clone --depth 1 -- \
@@ -67,7 +69,7 @@ alias hypr="nvim ~/.config/hypr/hyprland.conf"
 alias jp="pkill jupyter ; (nohup jupyter lab --notebook-dir ~/Desktop/Coding & exit) ; exit"
 alias c="cheat"
 alias zshrc="nvim ~/.config/zsh/.zshrc"
-
+alias texsnip="nvim ~/.config/nvim/LuaSnip/tex.lua"
 ## Search in Google etc.
 
 ggl()
@@ -83,3 +85,8 @@ bindkey -s "^o" "lfcd\n"
 # Syntax highlighting should be last sourced
 znap source zsh-users/zsh-syntax-highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern cursor)
+
+# Disable KDE Beep sound
+if xhost >& /dev/null; then 
+	xset b off
+fi

@@ -52,6 +52,9 @@ vim.cmd("let g:deoplete#enable_at_startup = 1")
 vim.cmd("nmap <localleader>c <Plug>(vimtex-compile)")
 vim.cmd("nmap <localleader>r <Plug>(vimtex-clean)")
 vim.cmd("nmap <localleader>v <plug>(vimtex-view)")
+vim.cmd("nmap <localleader>e <plug>(vimtex-errors)")
+
+
 
 -- press <Tab> to expand or jump in a snippet. These can also be mapped separately
 -- via <Plug>luasnip-expand-snippet and <Plug>luasnip-jump-next.
