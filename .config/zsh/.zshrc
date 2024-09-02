@@ -7,6 +7,8 @@ export PATH="$PATH:/home/song12301/.emacs.d/bin/"
 
 alias sshc="kitty +kitten ssh -Y jeb12301@cancun.cs.washington.edu"
 
+alias sshc="ssh jeb12301@cancun.cs.washington.edu"
+
 # Download Znap, if it's not there yet.
 [[ -r $ZDOTDIR/zsh_plugins/znap/znap.zsh ]] ||
     git clone --depth 1 -- \
@@ -92,5 +94,8 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern cursor)
 if xhost >& /dev/null; then 
 	xset b off
 fi
+<<<<<<< HEAD
 
 alias runc="gcc -g -Wall -std=c11"
+=======
+>>>>>>> origin/main

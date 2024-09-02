@@ -4,21 +4,34 @@
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "b5ea671e112a6d83",
         "type": "tabs",
         "children": [
           {
             "id": "f93b3a4c1eda1e26",
+=======
+        "id": "f76d5ca5f8c22cdf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cbb2447c7a11db0c",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "To Read.md",
+=======
+                "file": "CSE 374/Lecture 1.md",
+>>>>>>> origin/main
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+<<<<<<< HEAD
           },
           {
             "id": "1b34b81b35d0c4c4",
@@ -71,6 +84,8 @@
                 "source": false
               }
             }
+=======
+>>>>>>> origin/main
           }
         ],
         "currentTab": 4
@@ -102,7 +117,11 @@
             "state": {
               "type": "search",
               "state": {
+<<<<<<< HEAD
                 "query": "ampere",
+=======
+                "query": "vitali",
+>>>>>>> origin/main
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -115,8 +134,12 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 293.5004348754883,
     "collapsed": true
+=======
+    "width": 294.5
+>>>>>>> origin/main
   },
   "right": {
     "id": "e5d5de74125ccc5b",
@@ -132,7 +155,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "LLM.md",
+=======
+                "file": "CSE 374/Lecture 1.md",
+>>>>>>> origin/main
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +183,11 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "LLM.md"
+=======
+                "file": "CSE 374/Lecture 1.md"
+>>>>>>> origin/main
               }
             }
           }
@@ -178,6 +209,7 @@
       "templater-obsidian:Templater": false
     }
   },
+<<<<<<< HEAD
   "active": "fa37d7fc59c00e71",
   "lastOpenFiles": [
     "EEG/EEG Summary.md",
@@ -226,5 +258,55 @@
     "Papers/storage/EZFWZ7S5/image.png",
     "Papers/storage/DA87N3PW/image.png",
     "Papers/storage/4BZ6BGKA/image.png"
+=======
+  "active": "cbb2447c7a11db0c",
+  "lastOpenFiles": [
+    "PHYS 329/PHYS 329 Lecture/PHYS 329.md",
+    "CSE 374/Lecture 1.md",
+    "CSE 374",
+    "PHYS 329/classical-mechanics-by-kibble-and-berkshire.pdf",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 20.md",
+    "MATH 426/MATH 426 Homework/MATH 426 HW 4.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 16.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 17.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 19.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 18.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 15.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 21.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 22.md",
+    "MATH 426/MATH 426 Homework/MATH 426 HW 3.md",
+    "PHYS 323/David_J._Griffiths_-_Introduction_to_Electrodynamics_5th_edition.pdf",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 2.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 3.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 4.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 5.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 6.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 7.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 8.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 9.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 11.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 10.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 12.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 13.md",
+    "MATH 426/MATH 426 Lecture/MATH 426 Lecture 14.md",
+    "CSE 599N/HW4.md",
+    "CSE 599N/attachments/Pasted image 20240524123007.png",
+    "CSE 599N/attachments/Pasted image 20240524123000.png",
+    "CSE 599N/attachments/Pasted image 20240524122934.png",
+    "CSE 599N/attachments/Pasted image 20240524122926.png",
+    "CSE 599N/attachments/Pasted image 20240524122854.png",
+    "CSE 599N/attachments/Pasted image 20240524122847.png",
+    "CSE 599N/attachments/Pasted image 20240524122810.png",
+    "CSE 599N/attachments/Pasted image 20240524122731.png",
+    "CSE 599N/PNS-ch2.pdf",
+    "MATH 426/MATH 426 Homework/JEB_HW3.synctex(busy)",
+    "MATH 426/MATH 426 Homework/pdflatex1218958.fls",
+    "MATH 426/MATH 426 Homework/pdflatex1218946.fls",
+    "MATH 426/MATH 426 Homework/pdflatex1218923.fls",
+    "MATH 426/MATH 426 Homework/pdflatex1218914.fls",
+    "MATH 426/MATH 426 Homework/pdflatex1218909.fls",
+    "PHYS 329/PHYS 329 Homework/attachments/Pasted image 20240515183316.png",
+    "PHYS 323/PHYS 323 Lecture/attachments/Pasted image 20240512230053.png"
+>>>>>>> origin/main
   ]
 }

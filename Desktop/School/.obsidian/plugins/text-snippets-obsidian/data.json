@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "snippets_file": "snippet : It is an obsidian plugin, that replaces your selected text.\nq : >[!question] \nr : >[!info] Remark\ni : >[!idea] Clarification\n4 : #### \n5 : ##### \nref : [ref]($pst$)$end$\nim : ![|200]($pst$)$nl$$end$\nqed : $\\quad \\square$\n\n\nex : >[!example] Example\ncl : >[!idea] Clarification\nth : >[!theorem] Theorem",
+=======
+  "snippets_file": "snippet : It is an obsidian plugin, that replaces your selected text.\nq : >[!question] \nr : >[!info] Remark\ni : >[!idea] Clarification\n4 : #### \n5 : ##### \nurl : [ref]($pst$)$end$\nim : ![|200]($pst$)$nl$$end$\nqed : $\\quad \\square$\n\n\nex : >[!example] Example\nth : >[!theorem] Theorem",
+>>>>>>> origin/main
   "snippets": [
     "snippet : It is an obsidian plugin, that replaces your selected text.",
     "q : >[!question] ",
@@ -7,11 +11,18 @@
     "i : >[!idea] Clarification",
     "4 : #### ",
     "5 : ##### ",
+<<<<<<< HEAD
     "ref : [ref]($pst$)$end$",
     "im : ![|200]($pst$)$nl$$end$",
     "qed : $\\quad \\square$",
     "ex : >[!example] Example",
     "cl : >[!idea] Clarification",
+=======
+    "url : [ref]($pst$)$end$",
+    "im : ![|200]($pst$)$nl$$end$",
+    "qed : $\\quad \\square$",
+    "ex : >[!example] Example",
+>>>>>>> origin/main
     "th : >[!theorem] Theorem"
   ],
   "endSymbol": "$end$",

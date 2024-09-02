@@ -18,6 +18,12 @@ jupyter lab --generate-config # Create config then make jupyter open new window
 dnf install fzf # Fuzzy Find
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> origin/main
 # zshenv setup
 
 touch ~/.zshenv
@@ -81,6 +87,7 @@ custom callout blocks: https://www.reddit.com/r/ObsidianMD/comments/y64g3k/how_t
 
 # Ansys
 Download location in opt/lib/ansys (?)
+<<<<<<< HEAD
 
 
 # MATLAB
@@ -89,3 +96,5 @@ Download location in opt/lib/ansys (?)
 
 
 ssconvert for converting files
+=======
+>>>>>>> origin/main
