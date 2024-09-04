@@ -1,0 +1,5 @@
+
+<leader>ff		builtin.find_files
+<leader>fg		builtin.live_grep
+<leader>fb		builtin.buffers
+<leader>fh		builtin.help_tags

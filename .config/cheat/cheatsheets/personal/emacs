@@ -1,0 +1,11 @@
+C-x C-f		Navigation and file creation
+M-x		File creation?
+
+
+SPACE f e d		Config File
+SPACE f e R		Load Config
+
+SPACE f r		Recent Files
+SPACE f f		Find Files
+
+C-x LEFT/RIGHT	Cycle between buffers

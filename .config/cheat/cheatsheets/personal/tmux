@@ -1,0 +1,11 @@
+SUPER = CTRL-B
+
+SUPER % Split Horizontally | || |
+SUPER <arrow-key> to move between split windows
+
+SUPER Pgup		Scroll-mode
+q to exit scroll
+
+SUPER + b + d	Deattaches session
+tmux ls			Lists sessions
+tmux attach		Attaches session

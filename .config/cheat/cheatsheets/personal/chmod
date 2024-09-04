@@ -1,0 +1,21 @@
+u: user
+g: group
+o: other
+
+r:
+w:
+x:
+
+### Example
+chmod u-x <file>
+
+7:
+6:
+5:
+4:
+3:
+2:
+1:
+
+### Example
+chmod 764 <file>

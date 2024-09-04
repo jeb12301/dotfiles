@@ -1,0 +1,4 @@
+doom sync		synch config for packages
+doom upgrade	Upgrade to latest release
+doom doctor		Diagnose issues
+doom env		Snapshot of shell env file Doom loads at startup

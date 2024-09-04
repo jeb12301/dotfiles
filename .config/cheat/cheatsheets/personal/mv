@@ -1,0 +1,2 @@
+# mv all content from subdirectoy to current directory
+mv */* .

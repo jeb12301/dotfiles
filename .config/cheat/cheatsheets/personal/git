@@ -1,0 +1,15 @@
+git diff		# List Differences in git repository
+git add -A && git commit -m "Your Message" # add all changes and commit
+then, git push
+
+add -u # doesn't add new files
+
+
+git commit --amend # Edit msg in vim
+
+
+### Initialise
+git init
+git clone <url> [localDirectoryName]
+
+

@@ -1,0 +1,6 @@
+sudo /ansys_inc/shared_files/licensing/start_ansysli
+
+/opt/lumerical/v232/mpich2/nemesis/bin/mpiexec -n 16 /opt/lumerical/v232/bin/varfdtd-engine-mpich2nem -t 1 varfdtd.lms
+
+
+sudo /ansys_inc/shared_files/licensing/stop_ansysli

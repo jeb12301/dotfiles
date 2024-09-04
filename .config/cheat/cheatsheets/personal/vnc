@@ -1,0 +1,7 @@
+ssh maxwell@maxwell.amlab.ee.washington.edu
+vncserver -interface 127.0.0.X #X is unused port number
+ssh -L 5901:localhost:5901 maxwell@maxwell.amlab.ee.washington.edu
+vncviewer localhost:5901
+vncserver -kill :X
+
+vncserver -list

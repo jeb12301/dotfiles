@@ -1,0 +1,8 @@
+<q			Expands to quote, needs require  'org-tempo
+
+C+c C+s		Timestamp schedule
+ex, may 10 1pm +1 (1-2pm)
+
+C+c C+d		Deadline
+
+Can add multiple deadline

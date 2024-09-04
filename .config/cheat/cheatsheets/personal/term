@@ -1,0 +1,10 @@
+ctrl + w cuts the word to the left of the cursor
+alt + d cuts the word to the right of the cursor
+ctrl + k	cuts right
+ctrl + u	cuts left
+ctrl + y	pastes back cut
+ctrl + r reverse search through shell history by a keyword in LRU order.
+
+
+cd -	previous directory
+

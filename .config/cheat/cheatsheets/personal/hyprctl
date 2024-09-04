@@ -1,0 +1,1 @@
+hyprctl plugin load /path/to/the/plugin.so

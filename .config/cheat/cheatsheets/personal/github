@@ -1,0 +1,12 @@
+# Create Local Github Repository: 
+https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github
+
+
+# Create dotfile git:
+$ cd ~
+$ git init
+$ echo "/*" > .gitignore
+$ git add -f .gitignore
+$ git commit -m "add .gitignore"
+$ git add -f .profile
+$ git commit -m "add .profile"

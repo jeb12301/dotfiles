@@ -1,0 +1,21 @@
+ctrl b	page up
+ctrl f	page down
+
+
+c t space deletes up to space
+
+
+CTRL + DEL behaviour:
+CTRL + W, or
+
+CTRL + O	type one comamnd in insert mode
+DAW		Delete one word and preceding spaces
+DIW		Delete word
+
+
+Commend/uncomment
+https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim
+
+
+# Find difference between two files
+vim -d <file> <file>

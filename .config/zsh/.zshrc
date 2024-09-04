@@ -94,8 +94,4 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern cursor)
 if xhost >& /dev/null; then 
 	xset b off
 fi
-<<<<<<< HEAD
-
 alias runc="gcc -g -Wall -std=c11"
-=======
->>>>>>> origin/main

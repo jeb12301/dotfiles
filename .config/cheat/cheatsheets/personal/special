@@ -1,0 +1,6 @@
+bind=ALT+SHIFT,M,movetoworkspace,special
+bind=ALT+SHIFT,W,movetoworkspace,e+0
+bind=ALT+SHIFT,T,togglespecialworkspace
+
+exec-once=[workspace special; size 75% 20%;move 12.5% 40] kitty
+bind=,F12,togglespecialworkspace

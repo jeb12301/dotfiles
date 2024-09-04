@@ -1,0 +1,13 @@
+ssh -X maxwell@maxwell.amlab.ee.washington.edu
+
+vncviewer maxwell@maxwell.amlab.ee.washington.edu:(port)
+
+rsync /home/song12301/Desktop/Coding/Lumerical/varfdtd.lms maxwell@maxwell.amlab.ee.washington.edu:/hdd/Jeb
+
+rsync maxwell@maxwell.amlab.ee.washington.edu:/hdd/Jeb /home/song12301/Desktop/Coding/Lumerical/varfdtd.lms 
+
+rsync maxwell@maxwell.amlab.ee.washington.edu:/NOISE_data/Jeb /home/song12301/Desktop/Coding/Lumerical/server/
+
+
+### Error
+xterm-new: echo "export TERM=xterm-256color" >> ~/.bashrc

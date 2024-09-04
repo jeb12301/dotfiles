@@ -1,0 +1,5 @@
+grep -ri "get_word" <directory>
+
+-r recursive
+
+-i ignore case

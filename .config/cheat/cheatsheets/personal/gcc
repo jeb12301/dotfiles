@@ -1,0 +1,11 @@
+gcc -g -Wall -std=c11 -o <output file> <c script>
+
+Use the -g flag so that gdb can be used to debug the code
+
+-Wall for all warnings
+
+-std standard language
+
+use -c instead of -o flag to get .o object file without main block
+
+

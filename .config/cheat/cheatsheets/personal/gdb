@@ -1,0 +1,3 @@
+gdb -tui ./executable_name
+
+-tui flag to text user interfact
